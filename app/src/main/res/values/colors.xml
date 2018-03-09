@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#597DD3</color>
+    <color name="colorAccent">#01cafd</color>
+
+    <!--DashBorad Colors-->
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_blue">#5575c2</color>
+    <color name="light_blue">#597DD3</color>
+    <color name="icons_blue">#8c9bbf</color>
+    <color name="blue">#6641CD</color>
+    <color name="purple">#9b46eb</color>
+    <color name="announcement_color">#6641CD</color>
+    <color name="leave_request_color">#65B345</color>
+    <color name="issues_color">#c64130</color>
+    <color name="help_desk">#007AD8</color>
+    <color name="tab_color">#EFF3F6</color>
+
+
+    <color name="announcement_color1">#dc6641cd</color>
+    <color name="leave_request_color1">#dc65b345</color>
+    <color name="issues_color1">#dcc64130</color>
+    <color name="help_desk1">#dc007ad8</color>
+
+    <!--Edittextcolor-->
+    <color name="light_grey">#525456</color>
+    <color name="grey">#817979</color>
+    <color name="light_creame">#3E5D6F</color>
+    <color name="light_black">#605b5b</color>
+    <color name="light_white">#9f9999</color>
+    <color name="white_shade">#d3d5d7</color>
+
+    <!--NoticeBoard464660-->
+    <color name="notice_borad">#eff1f1</color>
+    <color name="yellow">#dac03c</color>
+    <color name="green">#6fd146</color>
+    <color name="orange">#d16536</color>
+    <color name="text_color">#5c6060</color>
+
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+</resources>

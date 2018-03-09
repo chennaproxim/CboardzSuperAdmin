@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cboadz.app.cboardzsuperadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cbordz_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/cbordz_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SampleActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.CreateCompany"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.CompaniesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.CompanyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.NoticeBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.ViewNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.AddNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.SupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.SupportReply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanyDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.EmployeesList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanyNoticesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanyReportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.SuperReportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuperAdmin.Activity.Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanySupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanySupportReply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanyAddNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CreateEmployeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CreateBusinessHeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CreateDeaprtmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CreateLeaveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.EmployeeDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.EmployeeNotifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.EmployeeSupport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.EmpAddQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.EmployeeProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.ViewEmployeeNotification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.EmployeeSupportView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyAdmin.Activity.CompanyViewNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees.Activity.EmployeeLeaves"
+            android:label="@string/title_activity_leave_bottom_navigation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SuperAdmin.Activity.Activity.EditCompany"></activity>
+    </application>
+
+</manifest>

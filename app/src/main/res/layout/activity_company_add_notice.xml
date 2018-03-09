@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cboadz.app.cboardzsuperadmin.CompanyAdmin.Activity.CompanyAddNotice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/company_add_notice_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Add Notice"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/comapny_list_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/profile_bg"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0">
+
+                        <EditText
+                            android:id="@+id/cmpny_notice_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:background="@null"
+                            android:hint="Title"
+                            android:padding="5dp"
+                            android:textSize="16dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/pop_upshow"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:onClick="ShowPopup"
+                            android:src="@drawable/holiday"
+                            android:transitionName="image_trans"
+                            app:civ_border_color="@color/blue"
+                            app:civ_border_width="1dp" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/light_black" />
+
+                    <EditText
+                        android:id="@+id/cmpny_notice_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="Description"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/light_black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <CheckBox
+                android:id="@+id/cmpny_addnotice_checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="All Departments" />
+
+            <LinearLayout
+                android:id="@+id/cmpny_addntce_deparment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="OR"
+                    android:textColor="@color/black" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    card_view:cardElevation="2dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/contacts"
+                        android:hint="Department or Employee Name"
+                        android:textSize="14dp" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/cmpny_notice_post"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ripple"
+                android:padding="10dp"
+                android:text="Post"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

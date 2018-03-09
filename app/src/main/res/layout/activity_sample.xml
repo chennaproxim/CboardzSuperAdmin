@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.cboadz.app.cboardzsuperadmin.SampleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cboraddz_circle_icon"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/ripple">
+
+        <Button
+            android:id="@+id/company_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@null"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/companies"
+                android:layout_marginLeft="55dp"
+                android:tint="@color/white"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ripple">
+
+        <Button
+            android:id="@+id/employee_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@null"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/no_employees"
+                android:layout_marginLeft="55dp"
+                android:tint="@color/white"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/main_activity"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/gear_icon"
+            android:tint="@color/light_grey"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.0">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/emp_prfle_cmpny_cover_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.2"
+                android:scaleType="fitXY"
+                android:src="@drawable/companyprofile" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/emp_prfle_cmpny_logo"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/account_normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/emp_prfle_photo"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/chenna_image"
+                        android:transitionName="employee_profile_img"
+                        app:civ_border_color="@color/white" />
+
+                    <TextView
+                        android:id="@+id/emp_dash_prfle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Chenna Rao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twenty_size"
+                        android:transitionName="employee_name" />
+
+                    <TextView
+                        android:id="@+id/emp_dash_prfle_empid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="ID: 1234"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/emp_dash_prfle_designation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Development"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:transitionName="employee_designation" />
+
+                    <TextView
+                        android:id="@+id/emp_prfle_cmpny_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="chenna@company.com"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="4.6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/emp_prfle_scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_notifications_active_black_24dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/light_black"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start|center"
+            android:textSize="@dimen/content_medium_size"
+            android:text="Posted On : 05 FEB 2018 The office will remain closed on 12th Feb 2018 on the occasion of Maha Shivaratri "
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.4"
+        android:orientation="vertical"
+        android:weightSum="2.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/leave_request_color">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/emply_leave_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    card_view:cardBackgroundColor="@color/leave_request_color"
+                    card_view:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="25dp"
+                            android:alpha="0.2"
+                            android:src="@mipmap/waves" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/leaverequest" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Leaves"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/announcement_color">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/emply_announcements_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    card_view:cardBackgroundColor="@color/announcement_color"
+                    card_view:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="25dp"
+                            android:alpha="0.2"
+                            android:src="@mipmap/waves" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/announcement" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    card_view:srcCompat="@drawable/circle_shape_solid" />
+
+                                <TextView
+                                    android:id="@+id/emp_prfle_notifiction_count"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:gravity="center"
+                                    android:text="3"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Notifications"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/issues_color">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/emply_issues_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    card_view:cardBackgroundColor="@color/issues_color"
+                    card_view:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="25dp"
+                            android:alpha="0.2"
+                            android:src="@mipmap/waves" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/issues" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    card_view:srcCompat="@drawable/circle_shape_solid" />
+
+                                <TextView
+                                    android:id="@+id/emp_prfle_helpdesk_notifiction_count"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:gravity="center"
+                                    android:text="2"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Helpdesk"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/help_desk">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/emply_shop_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    card_view:cardBackgroundColor="@color/help_desk"
+                    card_view:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="25dp"
+                            android:alpha="0.2"
+                            android:src="@mipmap/waves" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/shop_icon"
+                                android:tint="@color/white" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Shop"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

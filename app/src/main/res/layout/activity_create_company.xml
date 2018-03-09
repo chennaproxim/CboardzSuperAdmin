@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_shade"
+    android:orientation="vertical"
+    tools:context="com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Activity.CreateCompany">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/crt_compny_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Create Company"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/company_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:background="@drawable/profile_bg"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/upload_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/edit_icon"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/upload_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/profile_icon"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/upload_image_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/add_icon"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp"
+                        app:civ_circle_background_color="@color/light_blue" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/delete_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_clear_black_24dp"
+                        android:visibility="gone"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp"
+                        app:civ_circle_background_color="@color/issues_color" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_cmpnyname"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/company_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Company Name"
+                                android:inputType="textCapWords"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_desc"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/description_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Description"
+                                android:inputType="textMultiLine"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_year"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/calendar_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Year Of Establish"
+                                android:inputType="number"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_reg_no"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/reg_gst_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Company Reg No"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_gst"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/reg_gst_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="GST"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_hr_head_email"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/email_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="HR Head Email"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_website"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/website_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Website"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_link"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/website_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Link (Optional)"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_cmpny_email"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/email_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Company Email"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_phne_no"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/phone_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Company Phone No"
+                                android:inputType="number"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="sans-serif"
+                            android:text="Select Industry"
+                            android:textColor="@color/light_grey" />
+
+                        <Spinner
+                            android:id="@+id/create_cmpny_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:entries="@array/industry" />
+
+                        <View
+                            android:id="@+id/line"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/gradient" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_root_adminmail"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/email_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Root Administrator Email"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:theme="@style/EditTextTheme">
+
+                            <EditText
+                                android:id="@+id/cmpny_default_password"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/email_icon"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/icons_blue"
+                                android:fontFamily="sans-serif-medium"
+                                android:hint="Password"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textColor="@color/light_black"
+                                android:textColorHint="@color/light_white"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/crt_cmpny_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/ripple"
+                            android:text="Create"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_avalible"
+        android:icon="@drawable/ic_pie_chart_black_24dp"
+        android:title="@string/title_avalible" />
+
+    <item
+        android:id="@+id/navigation_applied"
+        android:icon="@drawable/ic_check_circle_black_24dp"
+        android:title="@string/title_approved" />
+
+    <item
+        android:id="@+id/navigation_newrequest"
+        android:icon="@drawable/ic_create_new_request_black_24dp"
+        android:title="@string/title_newrequest" />
+
+</menu>
