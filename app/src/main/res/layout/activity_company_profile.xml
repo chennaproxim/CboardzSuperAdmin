@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Activity.CompanyProfile">
+    tools:context=".SuperAdmin.Activity.CompanyProfile">
 
     <RelativeLayout
         android:layout_width="match_parent"

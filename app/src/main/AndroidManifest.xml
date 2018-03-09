@@ -28,31 +28,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SuperAdmin.Activity.Activity.CreateCompany"
+            android:name=".SuperAdmin.Activity.CreateCompany"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.CompaniesListActivity"
+            android:name=".SuperAdmin.Activity.CompaniesListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.LoginActivity"
+            android:name=".SuperAdmin.Activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.CompanyProfile"
+            android:name=".SuperAdmin.Activity.CompanyProfile"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.NoticeBoard"
+            android:name=".SuperAdmin.Activity.NoticeBoard"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.ViewNotice"
+            android:name=".SuperAdmin.Activity.ViewNotice"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.AddNotice"
+            android:name=".SuperAdmin.Activity.AddNotice"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.SupportActivity"
+            android:name=".SuperAdmin.Activity.SupportActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.SupportReply"
+            android:name=".SuperAdmin.Activity.SupportReply"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CompanyAdmin.Activity.CompanyDashboard"
@@ -67,10 +67,10 @@
             android:name=".CompanyAdmin.Activity.CompanyReportsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.SuperReportsActivity"
+            android:name=".SuperAdmin.Activity.SuperReportsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SuperAdmin.Activity.Activity.MainActivity"
+            android:name=".SuperAdmin.Activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CompanyAdmin.Activity.CompanySupportActivity"
@@ -124,7 +124,7 @@
             android:name=".Employees.Activity.EmployeeLeaves"
             android:label="@string/title_activity_leave_bottom_navigation"
             android:screenOrientation="portrait" />
-        <activity android:name=".SuperAdmin.Activity.Activity.EditCompany"></activity>
+        <activity android:name=".SuperAdmin.Activity.EditCompany"></activity>
     </application>
 
 </manifest>

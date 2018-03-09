@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Fragments.CompnyListAll">
+    tools:context=".SuperAdmin.Fragments.CompnyListAll">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/company_list_all_recycler_view"

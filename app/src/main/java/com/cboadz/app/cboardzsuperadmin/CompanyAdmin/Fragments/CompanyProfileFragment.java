@@ -2,8 +2,6 @@ package com.cboadz.app.cboardzsuperadmin.CompanyAdmin.Fragments;
 
 
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cboadz.app.cboardzsuperadmin.R;
-import com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Activity.CreateCompany;
 import com.cboadz.app.cboardzsuperadmin.Utils.AppConstants;
 import com.squareup.picasso.Picasso;
 

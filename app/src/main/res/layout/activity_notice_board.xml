@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/notice_borad"
     android:orientation="vertical"
-    tools:context="com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Activity.NoticeBoard">
+    tools:context=".SuperAdmin.Activity.NoticeBoard">
 
     <RelativeLayout
         android:layout_width="match_parent"

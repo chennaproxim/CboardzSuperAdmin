@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Activity.LoginActivity">
+    tools:context=".SuperAdmin.Activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

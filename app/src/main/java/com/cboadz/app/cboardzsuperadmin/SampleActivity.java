@@ -8,7 +8,7 @@ import android.view.View;
 import com.cboadz.app.cboardzsuperadmin.CompanyAdmin.Activity.CompanyDashboard;
 import com.cboadz.app.cboardzsuperadmin.Employees.Activity.EmployeeDashboard;
 import com.cboadz.app.cboardzsuperadmin.Utils.AbsRuntimePermission;
-import com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Activity.LoginActivity;
+import com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.LoginActivity;
 
 public class SampleActivity extends AbsRuntimePermission {
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity.Activity.AddNotice">
+    tools:context=".SuperAdmin.Activity.AddNotice">
 
     <RelativeLayout
         android:layout_width="match_parent"
