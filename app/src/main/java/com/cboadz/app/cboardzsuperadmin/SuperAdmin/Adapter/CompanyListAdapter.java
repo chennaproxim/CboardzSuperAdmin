@@ -1,7 +1,9 @@
 package com.cboadz.app.cboardzsuperadmin.SuperAdmin.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -59,9 +61,12 @@ public class CompanyListAdapter extends RecyclerView.Adapter<CompanyListAdapter.
             @Override
             public void onClick(View view) {
 
+                pair1 = Pair.create(holder.itemView.findViewById(R.id.sa_copany_logo),"image_trans");
                 Intent intent = new Intent(mcontext, CompanyProfile.class);
                 intent.putExtra("id", allcompanylist.get(position).getId());
-                mcontext.startActivity(intent);
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat
+                        .makeSceneTransitionAnimation((Activity)view.getContext(),pair1);
+                mcontext.startActivity(intent,activityOptionsCompat.toBundle());
             }
         });
     }

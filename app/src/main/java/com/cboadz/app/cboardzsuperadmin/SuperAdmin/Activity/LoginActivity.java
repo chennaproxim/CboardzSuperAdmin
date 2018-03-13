@@ -44,19 +44,13 @@ public class LoginActivity extends Activity implements LoginView {
             @Override
             public void onClick(View view) {
 
-                if (NetworkCheck.getInstance(LoginActivity.this).isOnline()) {
-                    progressDialog = new ProgressDialog(LoginActivity.this, R.style.MyAlertDialogStyle);
-                    String gmail = email.getText().toString().trim();
-                    String passwrd = password.getText().toString().trim();
-                    progressDialog.setMessage(AppConstants.LOGING);
-                    progressDialog.show();
-                    mloginPresenter.performLogin(gmail, passwrd);
-                }
-                else {
-                    Snackbar snackbar = Snackbar
-                            .make(findViewById(R.id.login_linear_layout),"No Network", Snackbar.LENGTH_LONG);
-                    snackbar.show();
-                }
+                progressDialog = new ProgressDialog(LoginActivity.this, R.style.MyAlertDialogStyle);
+                String gmail = email.getText().toString().trim();
+                String passwrd = password.getText().toString().trim();
+                progressDialog.setMessage(AppConstants.LOGING);
+                progressDialog.show();
+                mloginPresenter.performLogin(gmail, passwrd);
+
             }
         });
     }
@@ -92,7 +86,7 @@ public class LoginActivity extends Activity implements LoginView {
             SharedPreferences Preferences = getSharedPreferences(AppConstants.TOKEN, MODE_PRIVATE);
             SharedPreferences.Editor editor = Preferences.edit();
             editor.putString("tokenkey", loginResponces.getToken().toString());
-            editor.putString("loginid",loginResponces.getData().get(0).getId());
+            editor.putString("loginid", loginResponces.getData().get(0).getId());
             editor.commit();
 
             Toast.makeText(this, loginResponces.getResponse(), Toast.LENGTH_SHORT).show();
@@ -108,20 +102,20 @@ public class LoginActivity extends Activity implements LoginView {
                 //clear Textfields once login success
                 clearFileds();
 
-            } else if (loginResponces.getLogintype().equals("company")){
+            } else if (loginResponces.getLogintype().equals("company")) {
 
                 SharedPreferences companyPreferenes = getSharedPreferences(AppConstants.COMPANYPROFILEDATA, MODE_PRIVATE);
                 SharedPreferences.Editor companyEditor = companyPreferenes.edit();
-                companyEditor.putString("companylogo",loginResponces.getData().get(0).getLogo());
-                companyEditor.putString("companyname",loginResponces.getData().get(0).getCompanyname());
-                companyEditor.putString("companyyoe",loginResponces.getData().get(0).getYearofestablish());
-                companyEditor.putString("companygst",loginResponces.getData().get(0).getGst());
-                companyEditor.putString("companyreg",loginResponces.getData().get(0).getCompanyregno());
-                companyEditor.putString("companyhrheadmail",loginResponces.getData().get(0).getHrheademail());
-                companyEditor.putString("companywebsite",loginResponces.getData().get(0).getWebsite());
-                companyEditor.putString("companymail",loginResponces.getData().get(0).getCompanyemail());
-                companyEditor.putString("companyphone",loginResponces.getData().get(0).getCompanyphoneno());
-                companyEditor.putString("companybusinesstype",loginResponces.getData().get(0).getIndustry());
+                companyEditor.putString("companylogo", loginResponces.getData().get(0).getLogo());
+                companyEditor.putString("companyname", loginResponces.getData().get(0).getCompanyname());
+                companyEditor.putString("companyyoe", loginResponces.getData().get(0).getYearofestablish());
+                companyEditor.putString("companygst", loginResponces.getData().get(0).getGst());
+                companyEditor.putString("companyreg", loginResponces.getData().get(0).getCompanyregno());
+                companyEditor.putString("companyhrheadmail", loginResponces.getData().get(0).getHrheademail());
+                companyEditor.putString("companywebsite", loginResponces.getData().get(0).getWebsite());
+                companyEditor.putString("companymail", loginResponces.getData().get(0).getCompanyemail());
+                companyEditor.putString("companyphone", loginResponces.getData().get(0).getCompanyphoneno());
+                companyEditor.putString("companybusinesstype", loginResponces.getData().get(0).getIndustry());
                 companyEditor.commit();
 
                 Intent intent = new Intent(LoginActivity.this, CompanyDashboard.class);
@@ -143,7 +137,7 @@ public class LoginActivity extends Activity implements LoginView {
     @Override
     public void Error(String responce) {
         progressDialog.dismiss();
-        Toast.makeText(this,responce, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, responce, Toast.LENGTH_SHORT).show();
     }
 
     //clear Edittext Fields once login success
