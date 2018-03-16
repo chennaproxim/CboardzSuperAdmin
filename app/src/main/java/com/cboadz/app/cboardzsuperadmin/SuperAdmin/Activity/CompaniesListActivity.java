@@ -78,17 +78,28 @@ public class CompaniesListActivity extends AppCompatActivity implements Companyl
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CompnyListAll(), "All");
-        adapter.addFragment(new CompanyListActive(), "Active");
-        adapter.addFragment(new CompanyListInActive(), "Inactive");
-        adapter.addFragment(new CompnayListSuspend(), "Suspended");
-        adapter.addFragment(new CompanyListOnHold(), "OnHold");
+        adapter.addFragment(new CompnyListAll(mresult1), "All");
+        adapter.addFragment(new CompanyListActive(mresult1), "Active");
+        adapter.addFragment(new CompanyListInActive(mresult1), "Inactive");
+        adapter.addFragment(new CompnayListSuspend(mresult1), "Suspended");
+        adapter.addFragment(new CompanyListOnHold(mresult1), "OnHold");
+        viewPager.setAdapter(adapter);
+    }
+
+    private void setupViewPagerNoData(ViewPager viewPager, String msg) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new CompnyListAll(msg), "All");
+        adapter.addFragment(new CompanyListActive(msg), "Active");
+        adapter.addFragment(new CompanyListInActive(msg), "Inactive");
+        adapter.addFragment(new CompnayListSuspend(msg), "Suspended");
+        adapter.addFragment(new CompanyListOnHold(msg), "OnHold");
         viewPager.setAdapter(adapter);
     }
 
     @Override
     public void showcompaniesList(ArrayList<CompanyListData> getcompanylist) {
 
+        mresult1.clear();
         mresult1 = getcompanylist;
         setupViewPager(viewPager);
     }
@@ -97,6 +108,7 @@ public class CompaniesListActivity extends AppCompatActivity implements Companyl
     public void dataNotfound(String msg) {
 
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+        setupViewPagerNoData(viewPager,msg);
     }
 
 
@@ -111,33 +123,7 @@ public class CompaniesListActivity extends AppCompatActivity implements Companyl
 
         @Override
         public Fragment getItem(int position) {
-            Fragment fragment=null;
-            switch (position){
-                case 0:
-                    if (mresult != null) {
-                        fragment = new CompnyListAll();
-                        Bundle bundle = new Bundle();
-                        bundle.putSerializable("companyarrays", mresult1);
-                        fragment.setArguments(bundle);
-                    }
-                    break;
-                case 1:
-                    fragment=new CompanyListActive();
-                    break;
-                case 2:
-                    fragment=new CompanyListInActive();
-                    break;
-                case 3:
-                    fragment=new CompnayListSuspend();
-                    break;
-                case 4:
-                    fragment=new CompanyListOnHold();
-                    break;
-                default:
-                    fragment=null;
-                    break;
-            }
-            return fragment;
+            return mFragmentList.get(position);
         }
 
         @Override

@@ -12,6 +12,7 @@ import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by chinn on 02/21/18.
@@ -41,6 +42,8 @@ public class CompanylistAllPresenterImpl implements CompanylistAllPresenter {
                         try {
                             if (result != null) {
                                 mcompanylistAllView.showcompaniesList((ArrayList<CompanyListData>) result.getData());
+                            }else {
+                                mcompanylistAllView.dataNotfound("No records found");
                             }
 
                         }catch (Exception exception){

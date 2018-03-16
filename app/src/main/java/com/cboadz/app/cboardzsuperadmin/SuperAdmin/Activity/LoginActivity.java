@@ -34,7 +34,7 @@ public class LoginActivity extends Activity implements LoginView {
         email = (TextInputEditText) findViewById(R.id.super_admin_email);
         password = (TextInputEditText) findViewById(R.id.super_admin_password);
 
-        email.setText("macc.sharma007@gmail.com");
+        email.setText("admin@cboardz.com");
         password.setText("12345");
 
         mlogindto = new LoginResponce();

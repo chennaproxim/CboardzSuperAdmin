@@ -49,15 +49,11 @@ public class EmployeeActiveFragment extends Fragment {
         progressDialog.setMessage(AppConstants.LOADING);
         progressDialog.show();
 
-        int count = mEmpData.size();
-
         for (int i = 0; i < mEmpData.size(); i++) {
             if (mEmpData.get(i).getStatustype().equals("Active")) {
                 mEmpdataActive.add(mEmpData.get(i));
             }
         }
-
-        int countting = mEmpdataActive.size();
 
         mEmployeeListAdapter = new EmployeeListAdapter(mEmpdataActive,getContext(),"All");
         final GridLayoutManager gridLayoutManager =new GridLayoutManager(getActivity(),2);

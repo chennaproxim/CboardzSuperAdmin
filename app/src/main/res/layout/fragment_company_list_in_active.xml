@@ -5,10 +5,20 @@
     tools:context=".SuperAdmin.Fragments.CompanyListInActive">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/company_InActive_records_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="InActive" />
+        android:src="@drawable/norecordsfound"
+        android:padding="65dp"
+        android:visibility="gone" />
+
+
+    </RelativeLayout>
 
 </FrameLayout>

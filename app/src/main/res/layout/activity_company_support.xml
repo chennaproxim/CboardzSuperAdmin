@@ -72,7 +72,6 @@
                     android:background="@drawable/circle"
                     android:backgroundTint="@color/green" />
 
-
             </RelativeLayout>
 
             <LinearLayout
@@ -99,25 +98,6 @@
                     android:textColor="@color/light_black"
                     android:textSize="16dp" />
 
-                <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="horizontal">-->
-
-                <!--<TextView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="5dp"-->
-                <!--android:layout_weight="1.0"-->
-                <!--android:fontFamily="sans-serif"-->
-                <!--android:text="Reported by: SaiKrishna"-->
-                <!--android:textColor="@color/light_black"-->
-                <!--android:textSize="10dp" />-->
-
-
-                <!--</LinearLayout>-->
-
-
             </LinearLayout>
 
             <LinearLayout
@@ -134,7 +114,6 @@
                     android:src="@drawable/right_arrow" />
 
             </LinearLayout>
-
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -205,24 +184,6 @@
                     android:text="Mobile App is Crashing"
                     android:textColor="@color/light_black"
                     android:textSize="16dp" />
-
-                <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="horizontal">-->
-
-                <!--<TextView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="5dp"-->
-                <!--android:layout_weight="1.0"-->
-                <!--android:fontFamily="sans-serif"-->
-                <!--android:text="Reported by: Koushik"-->
-                <!--android:textColor="@color/light_black"-->
-                <!--android:textSize="10dp" />-->
-
-                <!--</LinearLayout>-->
-
 
             </LinearLayout>
 
@@ -312,23 +273,6 @@
                     android:textColor="@color/light_black"
                     android:textSize="16dp" />
 
-                <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="horizontal">-->
-
-                <!--<TextView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="5dp"-->
-                <!--android:layout_weight="1.0"-->
-                <!--android:fontFamily="sans-serif"-->
-                <!--android:text="Reported by: Rashmi"-->
-                <!--android:textColor="@color/light_black"-->
-                <!--android:textSize="10dp" />-->
-                <!---->
-                <!--</LinearLayout>-->
-
             </LinearLayout>
 
             <LinearLayout
@@ -346,9 +290,7 @@
 
             </LinearLayout>
 
-
         </LinearLayout>
     </android.support.v7.widget.CardView>
-
 
 </LinearLayout>
