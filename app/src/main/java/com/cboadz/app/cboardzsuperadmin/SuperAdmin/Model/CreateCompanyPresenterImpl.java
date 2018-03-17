@@ -24,6 +24,7 @@ public class CreateCompanyPresenterImpl implements CreateCompanyPresenter {
     public CreateCompanyPresenterImpl(CreateCompanyView createCompanyView) {
 
         this.mcreateCompanyView = createCompanyView;
+
     }
 
     @Override
@@ -62,15 +63,13 @@ public class CreateCompanyPresenterImpl implements CreateCompanyPresenter {
                     @Override
                     public void onCompleted(Exception e, CreateCompanyResultDTO result) {
                         try {
-                            String res = result.toString();
                             mcreateCompanyView.uploadResult(result);
                             mcreateCompanyView.clearFields();
 
-                        }catch (Exception exception){
+                        } catch (Exception exception) {
                             mcreateCompanyView.Error();
                             exception.printStackTrace();
                         }
-
                     }
                 });
     }

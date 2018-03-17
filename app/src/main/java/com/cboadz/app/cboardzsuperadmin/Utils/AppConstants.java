@@ -5,6 +5,7 @@ package com.cboadz.app.cboardzsuperadmin.Utils;
  */
 public class AppConstants {
 
+    //SuperAdmin API
     public static String ADMIN_LOGIN_URL = "http://ec2-13-127-133-170.ap-south-1.compute.amazonaws.com:9000/login";
     public static String COMPANYALLLIST = "http://ec2-13-127-133-170.ap-south-1.compute.amazonaws.com:9000/companylist";
     public static String CREATECOMPANY = "http://ec2-13-127-133-170.ap-south-1.compute.amazonaws.com:9000/company";
