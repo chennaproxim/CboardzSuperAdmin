@@ -136,8 +136,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textCapWords"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textCapWords"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -155,8 +155,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="number"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="number"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -174,8 +174,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType=""
                             android:fontFamily="sans-serif-medium"
+                            android:inputType=""
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -193,8 +193,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textCapCharacters"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textCapCharacters"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -212,8 +212,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textEmailAddress"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textEmailAddress"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -231,8 +231,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="text"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="text"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -250,8 +250,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textEmailAddress"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textEmailAddress"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -269,8 +269,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="number"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="number"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -288,8 +288,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textCapWords"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textCapWords"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -307,8 +307,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textCapWords"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textCapWords"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -326,8 +326,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textMultiLine"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textMultiLine"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 
@@ -345,8 +345,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:inputType="textEmailAddress"
                             android:fontFamily="sans-serif-medium"
+                            android:inputType="textEmailAddress"
                             android:textColor="@color/light_grey"
                             android:textSize="14dp" />
 

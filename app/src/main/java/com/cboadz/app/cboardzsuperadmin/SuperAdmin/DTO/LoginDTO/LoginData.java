@@ -207,4 +207,28 @@ public class LoginData {
     public void setV(Integer v) {
         this.v = v;
     }
+
+    @Override
+    public String toString() {
+        return "LoginData{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", logo='" + logo + '\'' +
+                ", email='" + email + '\'' +
+                ", v=" + v +
+                ", companyname='" + companyname + '\'' +
+                ", description='" + description + '\'' +
+                ", yearofestablish='" + yearofestablish + '\'' +
+                ", companyregno='" + companyregno + '\'' +
+                ", gst='" + gst + '\'' +
+                ", hrheademail='" + hrheademail + '\'' +
+                ", website='" + website + '\'' +
+                ", linke='" + linke + '\'' +
+                ", companyemail='" + companyemail + '\'' +
+                ", companyphoneno='" + companyphoneno + '\'' +
+                ", industry='" + industry + '\'' +
+                ", rootadministratoremail='" + rootadministratoremail + '\'' +
+                ", coverimage='" + coverimage + '\'' +
+                '}';
+    }
 }

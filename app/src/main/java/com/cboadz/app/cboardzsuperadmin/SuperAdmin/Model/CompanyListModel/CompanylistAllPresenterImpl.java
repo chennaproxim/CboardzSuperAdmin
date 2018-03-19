@@ -1,5 +1,6 @@
 package com.cboadz.app.cboardzsuperadmin.SuperAdmin.Model.CompanyListModel;
 
+import android.support.v4.app.Fragment;
 import android.content.Context;
 
 import com.cboadz.app.cboardzsuperadmin.SuperAdmin.DTO.CompanyListDTO.CompanylistResult;
@@ -31,7 +32,7 @@ public class CompanylistAllPresenterImpl implements CompanylistAllPresenter {
     @Override
     public void getAllCompanylist(String token) {
 
-        Ion.with((Context) mcompanylistAllView)
+        Ion.with((Fragment) mcompanylistAllView)
                 .load(AppConstants.COMPANYALLLIST)
                 .setBodyParameter("token",token)
                 .as(new TypeToken<CompanylistResult>() {
@@ -48,7 +49,7 @@ public class CompanylistAllPresenterImpl implements CompanylistAllPresenter {
 
                         }catch (Exception exception){
                             exception.printStackTrace();
-                            mcompanylistAllView.dataNotfound("No records found");
+//                            mcompanylistAllView.dataNotfound("No records found");
                         }
                     }
                 });

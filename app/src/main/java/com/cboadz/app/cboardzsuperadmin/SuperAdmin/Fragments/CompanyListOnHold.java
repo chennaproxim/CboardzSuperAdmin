@@ -26,13 +26,9 @@ public class CompanyListOnHold extends Fragment {
     private ProgressDialog progressDialog;
     private ImageView norecords;
 
-    public CompanyListOnHold(ArrayList<CompanyListData> mresult1) {
+    public CompanyListOnHold() {
         // Required empty public constructor
-        this.mresutlOnHold = mresult1;
-    }
-
-    public CompanyListOnHold(String msg){
-        this.message = msg;
+//        this.mresutlOnHold = mresult1;
     }
 
     @Override
@@ -43,12 +39,8 @@ public class CompanyListOnHold extends Fragment {
         norecords = (ImageView) view.findViewById(R.id.company_Hold_records_image);
         progressDialog = new ProgressDialog(getActivity(), R.style.MyAlertDialogStyle);
         progressDialog.setMessage(AppConstants.LOADING);
-        progressDialog.show();
+//        progressDialog.show();
 
-        if (message.equals("No records found")) {
-            norecords.setVisibility(View.VISIBLE);
-            progressDialog.dismiss();
-        }
         return view;
     }
 

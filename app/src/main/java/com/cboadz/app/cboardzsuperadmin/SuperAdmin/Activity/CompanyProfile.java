@@ -31,7 +31,7 @@ public class CompanyProfile extends AppCompatActivity implements CompanyProfileV
 
     private Toolbar toolbar;
     public ImageView mcmpnycoverimage;
-    private CircleImageView mcmpnyprofilelogo;
+    private ImageView mcmpnyprofilelogo;
     private Bundle bundle;
     private String cmpnyimage, coverimage,id,token;
     private Bitmap bitmap;
@@ -182,7 +182,7 @@ public class CompanyProfile extends AppCompatActivity implements CompanyProfileV
 
     private void init() {
 
-        mcmpnyprofilelogo = (CircleImageView) findViewById(R.id.company_pfle_logo);
+        mcmpnyprofilelogo = (ImageView) findViewById(R.id.company_pfle_logo);
         mcmpnycoverimage = (ImageView) findViewById(R.id.company_cover_image);
         mCompanyname = (TextView) findViewById(R.id.cpcompany_name);
         mYearofestablish = (TextView) findViewById(R.id.cpcompany_yoe);

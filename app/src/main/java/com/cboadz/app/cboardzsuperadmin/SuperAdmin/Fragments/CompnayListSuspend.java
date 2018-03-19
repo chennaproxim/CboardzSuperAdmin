@@ -26,16 +26,10 @@ public class CompnayListSuspend extends Fragment {
     private ProgressDialog progressDialog;
     private ImageView norecords;
 
-    public CompnayListSuspend(ArrayList<CompanyListData> mresult1) {
+    public CompnayListSuspend() {
         // Required empty public constructor
-        this.mresultSuspend = mresult1;
+//        this.mresultSuspend = mresult1;
     }
-
-    public CompnayListSuspend(String msg){
-
-        this.message = msg;
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,12 +39,8 @@ public class CompnayListSuspend extends Fragment {
         norecords = (ImageView) view.findViewById(R.id.company_Suspend_records_image);
         progressDialog = new ProgressDialog(getActivity(), R.style.MyAlertDialogStyle);
         progressDialog.setMessage(AppConstants.LOADING);
-        progressDialog.show();
+//        progressDialog.show();
 
-        if (message.equals("No records found")) {
-            norecords.setVisibility(View.VISIBLE);
-            progressDialog.dismiss();
-        }
         
         return view;
     }

@@ -27,15 +27,11 @@ public class CompanyListInActive extends Fragment {
     private ImageView norecords;
 
 
-    public CompanyListInActive(ArrayList<CompanyListData> mresult1) {
+    public CompanyListInActive() {
         // Required empty public constructor
-        this.mresultInActive = mresult1;
+//        this.mresultInActive = mresult1;
     }
 
-    public CompanyListInActive(String msg) {
-
-        this.message = msg;
-    }
 
 
     @Override
@@ -46,13 +42,7 @@ public class CompanyListInActive extends Fragment {
         norecords = (ImageView) view.findViewById(R.id.company_InActive_records_image);
         progressDialog = new ProgressDialog(getActivity(), R.style.MyAlertDialogStyle);
         progressDialog.setMessage(AppConstants.LOADING);
-        progressDialog.show();
-
-        if (message.equals("No records found")) {
-            norecords.setVisibility(View.VISIBLE);
-            progressDialog.dismiss();
-        }
-
+//        progressDialog.show();
 
         return view;
     }

@@ -1,5 +1,6 @@
 package com.cboadz.app.cboardzsuperadmin.SuperAdmin.Activity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -32,16 +33,11 @@ import com.cboadz.app.cboardzsuperadmin.Utils.AppConstants;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompaniesListActivity extends AppCompatActivity implements CompanylistAllView {
+public class CompaniesListActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private Toolbar cmpny_list_toolbar;
-    private CompanylistAllPresenter mcompanylistAllPresenter;
-    private CompanylistResult mcompanylistResultDTO;
-    private String token;
-    private SharedPreferences preferences;
-    public  ArrayList<CompanyListData> mresult1 = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,13 +55,7 @@ public class CompaniesListActivity extends AppCompatActivity implements Companyl
 
         tabLayout = (TabLayout) findViewById(R.id.cmpny_list_tab);
         tabLayout.setupWithViewPager(viewPager);
-
-        preferences = getSharedPreferences(AppConstants.TOKEN, MODE_PRIVATE);
-        token = preferences.getString("tokenkey", String.valueOf(1));
-
-        mcompanylistResultDTO = new CompanylistResult();
-        mcompanylistAllPresenter = new CompanylistAllPresenterImpl(CompaniesListActivity.this);
-        mcompanylistAllPresenter.getAllCompanylist(token);
+        setupViewPager(viewPager);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.add_comapany_btn);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -77,40 +67,15 @@ public class CompaniesListActivity extends AppCompatActivity implements Companyl
     }
 
     private void setupViewPager(ViewPager viewPager) {
+
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CompnyListAll(mresult1), "All");
-        adapter.addFragment(new CompanyListActive(mresult1), "Active");
-        adapter.addFragment(new CompanyListInActive(mresult1), "Inactive");
-        adapter.addFragment(new CompnayListSuspend(mresult1), "Suspended");
-        adapter.addFragment(new CompanyListOnHold(mresult1), "OnHold");
+        adapter.addFragment(new CompnyListAll(), "All");
+        adapter.addFragment(new CompanyListActive(), "Active");
+        adapter.addFragment(new CompanyListInActive(), "Inactive");
+        adapter.addFragment(new CompnayListSuspend(), "Suspended");
+        adapter.addFragment(new CompanyListOnHold(), "OnHold");
         viewPager.setAdapter(adapter);
     }
-
-    private void setupViewPagerNoData(ViewPager viewPager, String msg) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CompnyListAll(msg), "All");
-        adapter.addFragment(new CompanyListActive(msg), "Active");
-        adapter.addFragment(new CompanyListInActive(msg), "Inactive");
-        adapter.addFragment(new CompnayListSuspend(msg), "Suspended");
-        adapter.addFragment(new CompanyListOnHold(msg), "OnHold");
-        viewPager.setAdapter(adapter);
-    }
-
-    @Override
-    public void showcompaniesList(ArrayList<CompanyListData> getcompanylist) {
-
-        mresult1.clear();
-        mresult1 = getcompanylist;
-        setupViewPager(viewPager);
-    }
-
-    @Override
-    public void dataNotfound(String msg) {
-
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
-        setupViewPagerNoData(viewPager,msg);
-    }
-
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
