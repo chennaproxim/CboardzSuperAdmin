@@ -7,4 +7,5 @@ package com.cboadz.app.cboardzsuperadmin.SuperAdmin.Presenter;
 public interface LoginPresenter {
 
     void performLogin(String username, String password);
+
 }

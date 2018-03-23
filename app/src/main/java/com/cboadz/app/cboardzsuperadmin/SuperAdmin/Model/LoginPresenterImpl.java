@@ -51,7 +51,7 @@ public class LoginPresenterImpl implements LoginPresenter {
                                 @Override
                                 public void onCompleted(Exception e, LoginResponce result) {
                                 try {
-                                    mloginView.showResponce(result);
+                                    mloginView.showResponse(result);
 
                                 }catch (Exception exception) {
                                     mloginView.Error(result.getResponse());

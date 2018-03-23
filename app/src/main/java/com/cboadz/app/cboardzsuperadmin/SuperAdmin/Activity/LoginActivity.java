@@ -5,7 +5,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.view.View;
 import android.widget.Toast;
@@ -17,7 +16,6 @@ import com.cboadz.app.cboardzsuperadmin.SuperAdmin.Model.LoginPresenterImpl;
 import com.cboadz.app.cboardzsuperadmin.SuperAdmin.Presenter.LoginPresenter;
 import com.cboadz.app.cboardzsuperadmin.SuperAdmin.View.LoginView;
 import com.cboadz.app.cboardzsuperadmin.Utils.AppConstants;
-import com.cboadz.app.cboardzsuperadmin.Utils.NetworkCheck;
 
 public class LoginActivity extends Activity implements LoginView {
 
@@ -78,7 +76,7 @@ public class LoginActivity extends Activity implements LoginView {
     }
 
     @Override
-    public void showResponce(LoginResponce loginResponces) {
+    public void showResponse(LoginResponce loginResponces) {
 
         progressDialog.dismiss();
         if (loginResponces.getResponse().equals("Login Sucess")) {

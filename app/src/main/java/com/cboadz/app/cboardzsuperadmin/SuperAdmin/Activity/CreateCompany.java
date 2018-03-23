@@ -26,7 +26,7 @@ import com.cboadz.app.cboardzsuperadmin.SuperAdmin.Model.CreateCompanyPresenterI
 import com.cboadz.app.cboardzsuperadmin.SuperAdmin.Presenter.CreateCompanyPresenter;
 import com.cboadz.app.cboardzsuperadmin.SuperAdmin.View.CreateCompanyView;
 import com.cboadz.app.cboardzsuperadmin.Utils.AppConstants;
-import com.cboadz.app.cboardzsuperadmin.SuperAdmin.restApi.CameraPermission;
+import com.cboadz.app.cboardzsuperadmin.Permissions.CameraPermission;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

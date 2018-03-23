@@ -14,7 +14,7 @@ public interface LoginView {
 
     void isValidPassword();
 
-    void showResponce(LoginResponce loginResponces);
+    void showResponse(LoginResponce loginResponces);
 
     void Error(String responce);
 

@@ -31,12 +31,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class EditCompany extends AppCompatActivity implements EditCompanyView {
 
     private Toolbar toolbar;
-    public ImageView mcmpnycoverimage;
+    private ImageView mcmpnycoverimage;
     private CircleImageView mcmpnyprfilelogo;
-    private EditText mid, mCompanyname, mYearofestablish, mRegno, mGst, mrootemail, mWebsite, mCompanyemail, mPhoneno,
+    private EditText mCompanyname, mYearofestablish, mRegno, mGst, mrootemail, mWebsite, mCompanyemail, mPhoneno,
             mBusinesstype, mlinke, mdesc, mhrhead;
     private String msid, msCompanyname, msYearofestablish, msRegno, msGst, msrootemail, msWebsite, msCompanyemail, msPhoneno,
-            msBusinesstype, mslinke, msdesc, mshrhead,mslogo,mscoverphoto;
+            msBusinesstype, mslinke, msdesc, mshrhead, mslogo, mscoverphoto;
     private SharedPreferences preferences;
     private String token;
     private Bundle bundle;
@@ -226,7 +226,7 @@ public class EditCompany extends AppCompatActivity implements EditCompanyView {
 
         progressDialog.dismiss();
         Toast.makeText(this, editCompanyDTO.getResponse(), Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(EditCompany.this,CompaniesListActivity.class));
+        startActivity(new Intent(EditCompany.this, CompaniesListActivity.class));
 
     }
 

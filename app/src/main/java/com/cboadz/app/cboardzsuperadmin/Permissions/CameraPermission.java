@@ -1,4 +1,4 @@
-package com.cboadz.app.cboardzsuperadmin.SuperAdmin.restApi;
+package com.cboadz.app.cboardzsuperadmin.Permissions;
 
 import android.Manifest;
 import android.annotation.TargetApi;
